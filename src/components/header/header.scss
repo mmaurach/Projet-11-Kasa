@@ -2,24 +2,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding-top: 45px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
   width: 100%;
   box-sizing: border-box;
-
-  &__logo {
-    height: 50px;
-  }
+  height: 68px;
 
   &__nav {
     display: flex;
-    gap: 25px;
+    gap: 60px;
   }
 }
 
 .nav__link {
-  font-size: 18px;
+  font-size: 24px;
   text-decoration: none;
-  text-transform: capitalize;
 
   &--active {
     text-decoration: underline;

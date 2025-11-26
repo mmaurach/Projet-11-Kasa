@@ -2,11 +2,21 @@
   background-color: black;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 210px;
+}
+
+.footer-img {
+  display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 66px;
+  width: 122px;
 }
 
 .rights {
   color: white;
   text-align: center;
+  padding-bottom: 30px;
 }

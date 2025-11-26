@@ -2,12 +2,34 @@
   position: relative;
   height: 223px;
   width: 100%;
+  margin-bottom: 43px;
+  padding-left: 100px;
+  padding-right: 100px;
+  box-sizing: border-box;
+}
+
+.banner-inner {
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 
 .banner-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 25px;
+  display: block;
+}
+
+/* Overlay */
+.banner-inner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 25px;
+  pointer-events: none;
 }
 
 .banner-txt {
@@ -19,5 +41,8 @@
   font-size: 48px;
   text-align: center;
   margin: 0;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black,
+    1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    /* Ombre portée floue (après le contour) */ 2px 2px 6px rgba(0, 0, 0, 0.85);
 }

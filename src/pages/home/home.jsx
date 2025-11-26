@@ -9,6 +9,7 @@ function Home() {
         imageAlt="Banner à propos"
         text="Chez-vous, partout et ailleurs"
       />
+      <div className="card-wrapper"></div>
     </div>
   );
 }
