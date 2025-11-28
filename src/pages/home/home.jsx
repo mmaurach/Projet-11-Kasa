@@ -6,7 +6,7 @@ function Home() {
     <div className="home-wrapper">
       <BannerImage
         imageSrc={bannerimg}
-        imageAlt="Banner à propos"
+        imageAlt="Banner Home"
         text="Chez-vous, partout et ailleurs"
       />
       <div className="card-wrapper"></div>
