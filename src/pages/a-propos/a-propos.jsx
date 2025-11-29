@@ -3,10 +3,10 @@ import bannerimg from "../../assets/banner-a-propos.png";
 
 function Propos() {
   return (
-    <div className="propos-wrapper">
+    <main className="propos-wrapper">
       <BannerImage imageSrc={bannerimg} imageAlt="Banner à propos" text="" />
       <div className="collapse-wrapper"></div>
-    </div>
+    </main>
   );
 }
 
