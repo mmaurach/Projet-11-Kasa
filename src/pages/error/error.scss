@@ -1,0 +1,22 @@
+.error-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 139px;
+}
+.error-404 {
+  padding-top: 90px;
+  font-weight: bold;
+  color: #ff6060;
+  font-size: 288px;
+}
+.error-oups {
+  color: #ff6060;
+  font-size: 36px;
+  text-align: center;
+}
+.error-link {
+  color: #000000;
+  font-size: 18px;
+  padding-bottom: 139px;
+}
