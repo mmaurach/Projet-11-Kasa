@@ -3,20 +3,35 @@
   align-items: center;
   flex-direction: column;
   gap: 139px;
+  @media (max-width: 700px) {
+    gap: 113px;
+  }
 }
 .error-404 {
   padding-top: 90px;
   font-weight: bold;
   color: #ff6060;
   font-size: 288px;
+  @media (max-width: 700px) {
+    font-size: 96px;
+    padding-top: 64px;
+  }
 }
 .error-oups {
   color: #ff6060;
   font-size: 36px;
   text-align: center;
+  @media (max-width: 700px) {
+    font-size: 18px;
+  }
 }
 .error-link {
   color: #000000;
   font-size: 18px;
   padding-bottom: 139px;
+  text-decoration: underline;
+  @media (max-width: 700px) {
+    font-size: 14px;
+    padding-bottom: 113px;
+  }
 }
