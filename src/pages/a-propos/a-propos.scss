@@ -4,4 +4,9 @@
   align-items: center;
   gap: 30px;
   margin-bottom: 39px;
+  @media (max-width: 700px) {
+    padding: 0px 20px 20px 20px;
+    margin-bottom: 0px;
+    gap: 20px;
+  }
 }
