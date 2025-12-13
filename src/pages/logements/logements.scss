@@ -1,0 +1,28 @@
+.logements-wrapper {
+  padding: 30px 100px 100px 50px;
+}
+
+.logement-info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.logement-title {
+  font-size: 36px;
+  font-weight: 500;
+  color: #ff6060;
+}
+
+.logement-location {
+  font-size: 18px;
+  margin-top: 5px;
+  color: #333;
+}
+
+.tags-wrapper {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
