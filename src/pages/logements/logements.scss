@@ -4,7 +4,7 @@
 }
 
 .logements-wrapper {
-  padding: 30px 100px 100px 50px;
+  padding: 0px 100px 60px 100px;
 }
 
 .logement-info {
@@ -34,4 +34,13 @@
 
 .host-wrapper {
   padding-top: 24px;
+}
+
+.collapses-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  gap: 75px;
+  font-size: 18px;
+  font-weight: bold;
 }

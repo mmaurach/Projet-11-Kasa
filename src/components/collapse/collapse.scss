@@ -28,6 +28,10 @@
   }
 }
 
+.collapse-container.small .collapse-title {
+  font-size: 18px;
+}
+
 .collapse-arrow {
   width: 32px;
   transition: transform 0.3s ease;
@@ -47,6 +51,11 @@
   @media (max-width: 700px) {
     font-size: 13px;
   }
+}
+
+.collapse-content li {
+  list-style: none;
+  margin-bottom: 5px;
 }
 
 @keyframes sweep {

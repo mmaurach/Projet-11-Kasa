@@ -5,6 +5,7 @@ import data from "../../data/logements.json";
 import Carrousel from "../../components/carrousel/carrousel";
 import Tags from "../../components/tags/tags";
 import HostRating from "../../components/host-rating/host-rating";
+import Collapse from "../../components/collapse/collapse";
 
 function Logement() {
   const { id } = useParams();
@@ -36,6 +37,19 @@ function Logement() {
         <div className="host-wrapper">
           <HostRating host={logement.host} rating={logement.rating} />
         </div>
+      </div>
+      <div className="collapses-wrapper">
+        <Collapse
+          title="Description"
+          content={logement.description}
+          size="small"
+        />
+
+        <Collapse
+          title="Équipements"
+          content={logement.equipments}
+          size="small"
+        />
       </div>
     </main>
   );

@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./collapse.scss";
 import arrow from "../../assets/arrow-back.png";
 
-function Collapse({ title, content, defaultOpen = false }) {
+function Collapse({ title, content, defaultOpen = false, size = "" }) {
   const [isOpen, setIsOpen] = useState(defaultOpen);
 
   const toggleCollapse = () => {
@@ -10,7 +10,7 @@ function Collapse({ title, content, defaultOpen = false }) {
   };
 
   return (
-    <div className="collapse-container">
+    <div className={`collapse-container ${size}`}>
       <div className="collapse-header" onClick={toggleCollapse}>
         <h3 className="collapse-title">{title}</h3>
         <img
@@ -20,7 +20,19 @@ function Collapse({ title, content, defaultOpen = false }) {
         />
       </div>
 
-      {isOpen && <div className="collapse-content">{content}</div>}
+      {isOpen && (
+        <div className="collapse-content">
+          {Array.isArray(content) ? (
+            <ul>
+              {content.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>{content}</p>
+          )}
+        </div>
+      )}
     </div>
   );
 }
